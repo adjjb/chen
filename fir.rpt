@@ -1,0 +1,565 @@
+****************************************
+Report : design
+Design : alu
+Version: P-2019.03-SP2
+Date   : Fri Nov 17 21:03:11 2023
+****************************************
+
+Design Attribute                         Value
+---------------------------------------------------------------------------
+Operating Conditions:
+  analysis_type                          on_chip_variation
+  operating_condition_min_name           tt_1p2v_25c
+  process_min                            1
+  temperature_min                        25
+  voltage_min                            1.2
+  tree_type_min                          balanced_case
+
+  operating_condition_max_name           tt_1p2v_25c
+  process_max                            1
+  temperature_max                        25
+  voltage_max                            1.2
+  tree_type_max                          balanced_case
+
+Wire Load:                               (use report_wire_load for more information)
+  wire_load_mode                         top
+  wire_load_model_max                    --
+  wire_load_model_min                    --
+  wire_load_selection_group_max          --
+  wire_load_selection_group_min          --
+  wire_load_min_block_size               0
+
+Design Rules:
+  max_capacitance                        --
+  min_capacitance                        --
+  max_fanout                             --
+  max_transition                         --
+  static_integrity                       --
+  dynamic_integrity                      --
+  max_area                               --
+
+Timing Ranges:
+  early_factor                           --
+  late_factor                            --
+
+Pin Input Delays:
+None specified.
+
+Pin Output Delays:
+None specified.
+Fast Analysis:                           disabled
+
+1
+****************************************
+Report : reference
+Design : alu
+Version: P-2019.03-SP2
+Date   : Fri Nov 17 21:03:11 2023
+****************************************
+
+
+Attributes:
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    A - abstracted timing model
+    E - extracted timing model
+    S - Stamp timing model
+    Q - Quick timing model (QTM)
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+--------------------------------------------------------------------------------
+ADDFHX1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   36.00     1          36.00      
+ADDFHX2TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   53.28     3         159.84      
+ADDFHX4TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   83.52     1          83.52      
+ADDFX1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   33.12     1          33.12      
+ADDHX1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   18.72     5          93.60      
+ADDHX4TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   47.52     2          95.04      
+ADDHXLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   17.28     5          86.40      
+AND2X2TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     15        108.00      
+AND2X4TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     14        141.12      
+AND2X6TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   14.40     4          57.60      
+AND2X8TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   15.84     10        158.40      
+AND3X2TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     1           8.64      
+AO21X4TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   12.96     1          12.96      
+AOI21X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     28        201.60      
+AOI21X2TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   12.96     19        246.24      
+AOI21X4TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   17.28     20        345.60      
+AOI22X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     41        354.24      
+AOI22X2TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   15.84     10        158.40      
+AOI22X4TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   23.04     3          69.12      
+AOI2BB1X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     1           8.64      
+AOI2BB2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     1          10.08      
+AOI2BB2X4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   24.48     3          73.44      
+BUFX12TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   15.84     2          31.68      
+BUFX3TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     19        136.80      
+BUFX4TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     11         95.04      
+BUFX6TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     6          69.12      
+BUFX8TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   12.96     3          38.88      
+CLKAND2X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     4          28.80      
+CLKBUFX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     45        259.20      
+CLKINVX12TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   14.40     2          28.80      
+CLKINVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     32        138.24      
+CLKINVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     10         43.20      
+CLKINVX3TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     7          40.32      
+CLKINVX6TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     8          57.60      
+CLKXOR2X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   12.96     1          12.96      
+CMPR22X2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   30.24     1          30.24      
+CMPR32X2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   31.68     2          63.36      
+INVX12TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   12.96     2          25.92      
+INVX1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     46        198.72      
+INVX2TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     315      1360.80      
+INVX3TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     15         86.40      
+INVX4TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     49        282.24      
+INVX6TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     13        112.32      
+INVX8TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     14        141.12      
+MXI2X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     2          23.04      
+MXI2X2TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   14.40     4          57.60      
+MXI2X4TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   23.04     2          46.08      
+NAND2BX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     16        115.20      
+NAND2BX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     28        282.24      
+NAND2BX4TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   14.40     22        316.80      
+NAND2BXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     6          43.20      
+NAND2X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     179      1031.04      
+NAND2X2TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     142      1022.40      
+NAND2X4TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     101      1163.52      
+NAND2X6TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   14.40     35        504.00      
+NAND2X8TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   18.72     24        449.28      
+NAND2XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     21        120.96      
+NAND3BX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     1           8.64      
+NAND3BX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     1          11.52      
+NAND3BX4TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   17.28     1          17.28      
+NAND3X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     4          28.80      
+NAND3X2TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     1          10.08      
+NAND3X4TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   15.84     4          63.36      
+NAND3X6TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   21.60     6         129.60      
+NAND3X8TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   31.68     4         126.72      
+NAND3XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     4          28.80      
+NOR2BX1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     4          28.80      
+NOR2BX2TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     11        110.88      
+NOR2BX4TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   12.96     8         103.68      
+NOR2X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     86        495.36      
+NOR2X2TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     56        403.20      
+NOR2X4TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     64        737.28      
+NOR2X6TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   14.40     17        244.80      
+NOR2X8TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   18.72     14        262.08      
+NOR2XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     15         86.40      
+OAI21X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     43        309.60      
+OAI21X2TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   12.96     37        479.52      
+OAI21X4TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   17.28     56        967.68      
+OAI21XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     2          14.40      
+OAI22X2TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   15.84     4          63.36      
+OAI22X4TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   23.04     5         115.20      
+OAI2BB1X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     8          69.12      
+OAI2BB1X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     11        126.72      
+OAI2BB1X4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   14.40     20        288.00      
+OAI2BB2X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   15.84     1          15.84      
+OAI2BB2X4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   23.04     1          23.04      
+OR2X1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     2          14.40      
+OR2X2TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     23        165.60      
+OR2X4TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     8          80.64      
+OR2X6TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   14.40     1          14.40      
+OR2X8TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   15.84     3          47.52      
+XNOR2X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     24        276.48      
+XNOR2X2TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   18.72     10        187.20      
+XNOR2X4TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   27.36     32        875.52      
+XOR2X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     35        403.20      
+XOR2X2TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   18.72     12        224.64      
+XOR2X4TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   28.80     117      3369.60      
+XOR3X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   27.36     1          27.36      
+--------------------------------------------------------------------------------
+Total 98 references                                   22055.04
+1
+****************************************
+Report : constraint
+Design : alu
+Version: P-2019.03-SP2
+Date   : Fri Nov 17 21:03:11 2023
+****************************************
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                          0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                          0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_delay/setup                                  0.00  (MET)
+    min_delay/hold                                   0.00  (MET)
+    max_capacitance                                  0.00  (MET)
+    max_transition                                   0.00  (MET)
+
+1
+****************************************
+Report : constraint
+	-all_violators
+	-path slack_only
+Design : alu
+Version: P-2019.03-SP2
+Date   : Fri Nov 17 21:03:11 2023
+****************************************
+
+
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min_max
+	-max_paths 1
+	-sort_by slack
+Design : alu
+Version: P-2019.03-SP2
+Date   : Fri Nov 17 21:03:11 2023
+****************************************
+
+
+  Startpoint: op[0] (input port clocked by clk)
+  Endpoint: result[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   0.0500     0.0500 r
+  op[0] (in)                             0.0183     0.0683 r
+  U525/Y (CLKBUFX2TS)                    0.1618     0.2302 r
+  U518/Y (NOR2BX1TS)                     0.0934     0.3236 f
+  U2101/Y (OAI2BB1X2TS)                  0.2416     0.5652 f
+  result[2] (out)                        0.0000     0.5652 f
+  data arrival time                                 0.5652
+
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  clock reconvergence pessimism          0.0000     0.0000
+  output external delay                 -0.0500    -0.0500
+  data required time                               -0.0500
+  ---------------------------------------------------------------
+  data required time                               -0.0500
+  data arrival time                                -0.5652
+  ---------------------------------------------------------------
+  slack (MET)                                       0.6152
+
+
+
+  Startpoint: b[0] (input port clocked by clk)
+  Endpoint: result[14] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   0.0500     0.0500 f
+  b[0] (in)                              0.0377     0.0877 f
+  U830/Y (INVX3TS)                       0.1544     0.2421 r
+  U1066/Y (INVX4TS)                      0.1238     0.3659 f
+  U879/Y (AOI22X4TS)                     0.2105     0.5764 r
+  U878/Y (NOR2X4TS)                      0.1175     0.6939 f
+  U1591/Y (XOR2X4TS)                     0.2234     0.9174 r
+  U1565/Y (NOR2X4TS)                     0.1423     1.0597 f
+  U892/Y (OAI21X4TS)                     0.1909     1.2506 r
+  U891/Y (NAND2X4TS)                     0.1368     1.3875 f
+  U890/Y (NAND2X6TS)                     0.0913     1.4787 r
+  U1545/Y (XNOR2X4TS)                    0.1691     1.6478 f
+  U889/Y (NOR2X6TS)                      0.1417     1.7895 r
+  U877/Y (INVX3TS)                       0.0885     1.8779 f
+  U1926/Y (NAND2X4TS)                    0.0684     1.9463 r
+  U1744/Y (XOR2X4TS)                     0.1529     2.0992 r
+  U1952/Y (NAND2X2TS)                    0.1677     2.2669 f
+  U1951/Y (OAI21X4TS)                    0.1125     2.3795 r
+  U1767/Y (AOI21X4TS)                    0.1263     2.5057 f
+  U1594/Y (OAI21X4TS)                    0.1980     2.7037 r
+  U963/Y (NAND3X4TS)                     0.1732     2.8769 f
+  U1593/Y (CLKINVX12TS)                  0.1081     2.9850 r
+  U1100/Y (NOR2X8TS)                     0.0570     3.0419 f
+  U1589/Y (OAI21X4TS)                    0.1227     3.1646 r
+  U1702/Y (XOR2X4TS)                     0.1721     3.3368 r
+  U1611/Y (XOR2X4TS)                     0.2004     3.5372 r
+  U1610/Y (XOR2X4TS)                     0.2266     3.7638 r
+  U1609/Y (NOR2X8TS)                     0.1499     3.9137 f
+  U1625/Y (OAI21X4TS)                    0.1618     4.0755 r
+  U2106/Y (AOI21X2TS)                    0.1334     4.2088 f
+  U2105/Y (OAI21X2TS)                    0.1127     4.3216 r
+  U2104/Y (XOR2X4TS)                     0.1948     4.5164 f
+  U2103/Y (OAI21X4TS)                    0.1364     4.6527 r
+  result[14] (out)                       0.0000     4.6527 r
+  data arrival time                                 4.6527
+
+  clock clk (rise edge)                 10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock reconvergence pessimism          0.0000    10.0000
+  output external delay                 -0.0500     9.9500
+  data required time                                9.9500
+  ---------------------------------------------------------------
+  data required time                                9.9500
+  data arrival time                                -4.6527
+  ---------------------------------------------------------------
+  slack (MET)                                       5.2973
+
+
+1
+****************************************
+Report : Switching Activity
+	
+Design : alu
+Version: P-2019.03-SP2
+Date   : Fri Nov 17 21:03:11 2023
+****************************************
+
+ Switching Activity Overview Statistics for "alu"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             2190(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      2190
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     35(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      35
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Combinational     2155(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      2155
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Static Probability Overview Statistics for "alu"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             2190(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      2190
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     35(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      35
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Combinational     2155(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      2155
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1
+****************************************
+Report : Switching Activity
+	-list_not_annotated
+Design : alu
+Version: P-2019.03-SP2
+Date   : Fri Nov 17 21:03:11 2023
+****************************************
+
+ Switching Activity Overview Statistics for "alu"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             2190(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      2190
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     35(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      35
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Combinational     2155(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      2155
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Static Probability Overview Statistics for "alu"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             2190(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      2190
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     35(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      35
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Combinational     2155(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      2155
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+List of nonannotated nets :
+1
+****************************************
+Report : Time Based Power
+Design : alu
+Version: P-2019.03-SP2
+Date   : Fri Nov 17 21:03:11 2023
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           9.339e-04 7.095e-04 2.754e-08 1.643e-03 (100.00%) 
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 7.095e-04   (43.17%)
+  Cell Internal Power  = 9.339e-04   (56.83%)
+  Cell Leakage Power   = 2.754e-08   ( 0.00%)
+                         ---------
+Total Power            = 1.643e-03  (100.00%)
+
+X Transition Power     =    0.0000
+Glitching Power        = 1.080e-05
+
+Peak Power             =    0.0129
+Peak Time              =    46.547
+
+1
+****************************************
+Report : Time Based Power
+	-hierarchy
+Design : alu
+Version: P-2019.03-SP2
+Date   : Fri Nov 17 21:03:11 2023
+****************************************
+
+
+
+                                      Int      Switch   Leak      Total
+Hierarchy                             Power    Power    Power     Power    %
+--------------------------------------------------------------------------------
+alu                                   9.34e-04 7.09e-04 2.75e-08  1.64e-03 100.0
+
+
+                                      Peak     Peak            Glitch   X-tran
+Hierarchy                             Power    Time            Power    Power
+--------------------------------------------------------------------------------
+alu                                   1.29e-02  46.547-46.548  1.08e-05    0.000
+1
